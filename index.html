@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Logo Remixer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sports Logo Remixer</h1>
+        </header>
+        <main>
+            <div class="logo-container">
+                <canvas id="logoCanvas" width="300" height="300"></canvas>
+            </div>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="logoSelect">Choose League:</label>
+                    <select id="logoSelect">
+                        <option value="nba">NBA</option>
+                        <option value="nfl">NFL</option>
+                        <option value="mlb">MLB</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label for="colorPicker">Choose Color:</label>
+                    <input type="color" id="colorPicker" value="#000000">
+                </div>
+                <div class="control-group">
+                    <label for="patternSelect">Choose Pattern:</label>
+                    <select id="patternSelect">
+                        <option value="none">No Pattern</option>
+                        <option value="stripes">Stripes</option>
+                        <option value="dots">Dots</option>
+                    </select>
+                </div>
+            </div>
+            <div class="export-buttons">
+                <button id="exportPNG">Export PNG</button>
+                <button id="exportJPEG">Export JPEG</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
